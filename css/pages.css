@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background: #f8f7fb;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #6941a5;
+}
+
+a {
+    color: #7952b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #603d91;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd2ed;
+    text-align: left;
+}
+
+th {
+    background: #7952b3;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1ebf8;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd2ed;
+    border-radius: 6px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 10px;
+    border: 1px solid #d5c8e6;
+    border-radius: 5px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 1px solid #7952b3;
+}
+
+form button,
+body > a[href="create.php"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #7952b3;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+form button:hover,
+body > a[href="create.php"]:hover {
+    background: #603d91;
+    color: white;
+}
+
+body > a[href="index.php"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #eee8f7;
+    color: #6941a5;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
